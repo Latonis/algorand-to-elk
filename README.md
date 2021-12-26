@@ -1,4 +1,5 @@
 # algorand-to-elk
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://forthebadge.com)
 # Starting the ELK Stack using the Docker-Compose file
 1. Intall [Docker Compose](https://docs.docker.com/compose/install/)
 2. While in this repository's folder, run `docker-compose up`
