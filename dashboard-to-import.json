@@ -1,0 +1,154 @@
+{
+  "version": "7.16.2",
+  "objects": [
+    {
+      "id": "ad54c840-660f-11ec-8f1b-ff4528ad4930",
+      "type": "dashboard",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-12-27T04:47:51.074Z",
+      "version": "WzU3NjMsMTBd",
+      "attributes": {
+        "title": "Algorand Stats",
+        "hits": 0,
+        "description": "",
+        "panelsJSON": "[{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":0,\"w\":24,\"h\":15,\"i\":\"acb7e289-faca-448f-953d-957b5e3e7619\"},\"panelIndex\":\"acb7e289-faca-448f-953d-957b5e3e7619\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsXY\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-1e28641e-7e3e-420d-99db-a5518960e1b4\"}],\"state\":{\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"yLeftExtent\":{\"mode\":\"full\"},\"yRightExtent\":{\"mode\":\"full\"},\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"labelsOrientation\":{\"x\":0,\"yLeft\":0,\"yRight\":0},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"bar_stacked\",\"layers\":[{\"layerId\":\"1e28641e-7e3e-420d-99db-a5518960e1b4\",\"accessors\":[\"64be6caf-cc7c-47d4-8928-49715e39b9ac\"],\"position\":\"top\",\"seriesType\":\"bar_stacked\",\"showGridlines\":false,\"layerType\":\"data\",\"xAccessor\":\"455e2e67-e99d-41e3-939f-f936de21ab73\"}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"1e28641e-7e3e-420d-99db-a5518960e1b4\":{\"columns\":{\"455e2e67-e99d-41e3-939f-f936de21ab73\":{\"label\":\"Top values of Type.keyword\",\"dataType\":\"string\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"Type.keyword\",\"isBucketed\":true,\"params\":{\"size\":5,\"orderBy\":{\"type\":\"column\",\"columnId\":\"64be6caf-cc7c-47d4-8928-49715e39b9ac\"},\"orderDirection\":\"desc\",\"otherBucket\":true,\"missingBucket\":false}},\"64be6caf-cc7c-47d4-8928-49715e39b9ac\":{\"label\":\"Count of records\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\"}},\"columnOrder\":[\"455e2e67-e99d-41e3-939f-f936de21ab73\",\"64be6caf-cc7c-47d4-8928-49715e39b9ac\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Transactions Performed\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":24,\"y\":0,\"w\":24,\"h\":15,\"i\":\"5f860dbb-d8f4-4ac1-98e7-3ccc66a44eb6\"},\"panelIndex\":\"5f860dbb-d8f4-4ac1-98e7-3ccc66a44eb6\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsXY\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-001d3714-d152-479b-bf76-ebd9b57df9a7\"}],\"state\":{\"visualization\":{\"legend\":{\"isVisible\":true,\"position\":\"right\"},\"valueLabels\":\"hide\",\"fittingFunction\":\"None\",\"yLeftExtent\":{\"mode\":\"full\"},\"yRightExtent\":{\"mode\":\"full\"},\"axisTitlesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"tickLabelsVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"labelsOrientation\":{\"x\":0,\"yLeft\":0,\"yRight\":0},\"gridlinesVisibilitySettings\":{\"x\":true,\"yLeft\":true,\"yRight\":true},\"preferredSeriesType\":\"line\",\"layers\":[{\"layerId\":\"001d3714-d152-479b-bf76-ebd9b57df9a7\",\"accessors\":[\"501d333d-57aa-4949-b447-aa2c546ff980\"],\"position\":\"top\",\"seriesType\":\"line\",\"showGridlines\":false,\"layerType\":\"data\",\"xAccessor\":\"be425642-f0b7-4ee1-8aae-961ed3e26517\",\"yConfig\":[{\"forAccessor\":\"501d333d-57aa-4949-b447-aa2c546ff980\",\"color\":\"#03e5a7\"}]}]},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"001d3714-d152-479b-bf76-ebd9b57df9a7\":{\"columns\":{\"be425642-f0b7-4ee1-8aae-961ed3e26517\":{\"label\":\"@timestamp\",\"dataType\":\"date\",\"operationType\":\"date_histogram\",\"sourceField\":\"@timestamp\",\"isBucketed\":true,\"scale\":\"interval\",\"params\":{\"interval\":\"auto\"},\"customLabel\":false},\"501d333d-57aa-4949-b447-aa2c546ff980\":{\"label\":\"Average of Weight\",\"dataType\":\"number\",\"operationType\":\"average\",\"sourceField\":\"Weight\",\"isBucketed\":false,\"scale\":\"ratio\"}},\"columnOrder\":[\"be425642-f0b7-4ee1-8aae-961ed3e26517\",\"501d333d-57aa-4949-b447-aa2c546ff980\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Average Weight per Accepted Vote\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":15,\"w\":24,\"h\":15,\"i\":\"5181ea25-be23-477c-81a1-8742b0c5a003\"},\"panelIndex\":\"5181ea25-be23-477c-81a1-8742b0c5a003\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsMetric\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-29e15065-6afc-4237-82c8-65f7b4484013\"}],\"state\":{\"visualization\":{\"layerId\":\"29e15065-6afc-4237-82c8-65f7b4484013\",\"accessor\":\"a7d466e5-a2e1-4eeb-ad18-84a6e428fee8\",\"layerType\":\"data\"},\"query\":{\"query\":\"Type.keyword : \\\"ProposalAssembled\\\" \",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"29e15065-6afc-4237-82c8-65f7b4484013\":{\"columns\":{\"a7d466e5-a2e1-4eeb-ad18-84a6e428fee8\":{\"label\":\"Total Proposals Assembled\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"a7d466e5-a2e1-4eeb-ad18-84a6e428fee8\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Total Proposals Made by Node\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":24,\"y\":15,\"w\":24,\"h\":15,\"i\":\"0d665d6e-f4ff-4bc9-8a1f-ec4cfdced301\"},\"panelIndex\":\"0d665d6e-f4ff-4bc9-8a1f-ec4cfdced301\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsMetric\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-29e15065-6afc-4237-82c8-65f7b4484013\"}],\"state\":{\"visualization\":{\"layerId\":\"29e15065-6afc-4237-82c8-65f7b4484013\",\"accessor\":\"a7d466e5-a2e1-4eeb-ad18-84a6e428fee8\",\"layerType\":\"data\"},\"query\":{\"query\":\"Type.keyword : \\\"ProposalRejected\\\" \",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"29e15065-6afc-4237-82c8-65f7b4484013\":{\"columns\":{\"a7d466e5-a2e1-4eeb-ad18-84a6e428fee8\":{\"label\":\"Total Proposals Rejected\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"a7d466e5-a2e1-4eeb-ad18-84a6e428fee8\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Proposals Rejected\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":30,\"w\":24,\"h\":15,\"i\":\"410f61b8-240a-4eaf-a00b-5a4331af53ff\"},\"panelIndex\":\"410f61b8-240a-4eaf-a00b-5a4331af53ff\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsMetric\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-616e0ca0-6b80-4c97-9eca-e5fa3d90579e\"}],\"state\":{\"visualization\":{\"layerId\":\"616e0ca0-6b80-4c97-9eca-e5fa3d90579e\",\"accessor\":\"76235180-7c7d-4030-b81e-7af6ac41a575\",\"layerType\":\"data\"},\"query\":{\"query\":\"Type.keyword : \\\"VoteAttest\\\" \",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"616e0ca0-6b80-4c97-9eca-e5fa3d90579e\":{\"columns\":{\"76235180-7c7d-4030-b81e-7af6ac41a575\":{\"label\":\"Total Votes Committed\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"76235180-7c7d-4030-b81e-7af6ac41a575\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Total Votes Committed by Node\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":24,\"y\":30,\"w\":24,\"h\":15,\"i\":\"656a8ecd-38bc-4564-b39c-ab5ec3d315a4\"},\"panelIndex\":\"656a8ecd-38bc-4564-b39c-ab5ec3d315a4\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsMetric\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-be80a016-4aa5-44f6-9f83-c178e46255b3\"}],\"state\":{\"visualization\":{\"layerId\":\"be80a016-4aa5-44f6-9f83-c178e46255b3\",\"accessor\":\"3c393553-08e9-4894-a60a-820b881644f5\",\"layerType\":\"data\"},\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"be80a016-4aa5-44f6-9f83-c178e46255b3\":{\"columns\":{\"3c393553-08e9-4894-a60a-820b881644f5\":{\"label\":\"Total Votes Accepted\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"filter\":{\"query\":\"Type.keyword : \\\"VoteAccepted\\\" \",\"language\":\"kuery\"},\"customLabel\":true}},\"columnOrder\":[\"3c393553-08e9-4894-a60a-820b881644f5\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Total Votes Accepted by Node\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":45,\"w\":24,\"h\":15,\"i\":\"03956036-fd7c-4cd4-aa59-909631468b25\"},\"panelIndex\":\"03956036-fd7c-4cd4-aa59-909631468b25\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsMetric\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-2cdca509-0e7e-44d0-a991-689795437baa\"}],\"state\":{\"visualization\":{\"layerId\":\"2cdca509-0e7e-44d0-a991-689795437baa\",\"accessor\":\"1c7a297d-99cb-40cb-b9cd-9b1ce061b3d6\",\"layerType\":\"data\"},\"query\":{\"query\":\"Type.keyword : \\\"BlockAssembled\\\" \",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"2cdca509-0e7e-44d0-a991-689795437baa\":{\"columns\":{\"1c7a297d-99cb-40cb-b9cd-9b1ce061b3d6\":{\"label\":\"Total Blocks Assembled\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"1c7a297d-99cb-40cb-b9cd-9b1ce061b3d6\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Total Blocks Assembled by Node\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":24,\"y\":60,\"w\":24,\"h\":15,\"i\":\"480b4f91-23c7-4f6e-8699-66404eb8803d\"},\"panelIndex\":\"480b4f91-23c7-4f6e-8699-66404eb8803d\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsDatatable\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-fde90e11-b346-496f-812f-32e463c92761\"}],\"state\":{\"visualization\":{\"layerId\":\"fde90e11-b346-496f-812f-32e463c92761\",\"layerType\":\"data\",\"columns\":[{\"columnId\":\"162826e8-6a9c-4ca6-b9cf-e3cf405d0d31\",\"alignment\":\"left\",\"hidden\":false},{\"columnId\":\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\",\"isTransposed\":false}]},\"query\":{\"query\":\"event : Disconnected\",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"fde90e11-b346-496f-812f-32e463c92761\":{\"columns\":{\"162826e8-6a9c-4ca6-b9cf-e3cf405d0d31\":{\"label\":\"Nodes\",\"dataType\":\"string\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"remote.keyword\",\"isBucketed\":true,\"params\":{\"size\":21,\"orderBy\":{\"type\":\"column\",\"columnId\":\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\"},\"orderDirection\":\"desc\",\"otherBucket\":true,\"missingBucket\":false},\"customLabel\":true},\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\":{\"label\":\"Number of Disconnections\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"162826e8-6a9c-4ca6-b9cf-e3cf405d0d31\",\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Unique Disconnections from Node\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":24,\"y\":45,\"w\":24,\"h\":15,\"i\":\"3c54e4c3-2ed5-485a-bd9d-22d9d25c8682\"},\"panelIndex\":\"3c54e4c3-2ed5-485a-bd9d-22d9d25c8682\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsMetric\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-2cdca509-0e7e-44d0-a991-689795437baa\"}],\"state\":{\"visualization\":{\"layerId\":\"2cdca509-0e7e-44d0-a991-689795437baa\",\"accessor\":\"1c7a297d-99cb-40cb-b9cd-9b1ce061b3d6\",\"layerType\":\"data\"},\"query\":{\"query\":\"Type.keyword : \\\"BlockRejected\\\" \",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"2cdca509-0e7e-44d0-a991-689795437baa\":{\"columns\":{\"1c7a297d-99cb-40cb-b9cd-9b1ce061b3d6\":{\"label\":\"Total Blocks Rejected\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"1c7a297d-99cb-40cb-b9cd-9b1ce061b3d6\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Total Blocks Rejected\"},{\"version\":\"7.16.2\",\"type\":\"lens\",\"gridData\":{\"x\":0,\"y\":60,\"w\":24,\"h\":15,\"i\":\"375ae4ea-4a9f-4974-bc1b-f42053eb9397\"},\"panelIndex\":\"375ae4ea-4a9f-4974-bc1b-f42053eb9397\",\"embeddableConfig\":{\"attributes\":{\"title\":\"\",\"visualizationType\":\"lnsDatatable\",\"type\":\"lens\",\"references\":[{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-current-indexpattern\"},{\"type\":\"index-pattern\",\"id\":\"23d30fa0-660f-11ec-8f1b-ff4528ad4930\",\"name\":\"indexpattern-datasource-layer-fde90e11-b346-496f-812f-32e463c92761\"}],\"state\":{\"visualization\":{\"layerId\":\"fde90e11-b346-496f-812f-32e463c92761\",\"layerType\":\"data\",\"columns\":[{\"columnId\":\"162826e8-6a9c-4ca6-b9cf-e3cf405d0d31\",\"alignment\":\"left\",\"hidden\":false},{\"columnId\":\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\",\"isTransposed\":false}]},\"query\":{\"query\":\"event : ConnectedOut\",\"language\":\"kuery\"},\"filters\":[],\"datasourceStates\":{\"indexpattern\":{\"layers\":{\"fde90e11-b346-496f-812f-32e463c92761\":{\"columns\":{\"162826e8-6a9c-4ca6-b9cf-e3cf405d0d31\":{\"label\":\"Nodes\",\"dataType\":\"string\",\"operationType\":\"terms\",\"scale\":\"ordinal\",\"sourceField\":\"remote.keyword\",\"isBucketed\":true,\"params\":{\"size\":21,\"orderBy\":{\"type\":\"column\",\"columnId\":\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\"},\"orderDirection\":\"desc\",\"otherBucket\":true,\"missingBucket\":false},\"customLabel\":true},\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\":{\"label\":\"Number of Connections Outbound\",\"dataType\":\"number\",\"operationType\":\"count\",\"isBucketed\":false,\"scale\":\"ratio\",\"sourceField\":\"Records\",\"customLabel\":true}},\"columnOrder\":[\"162826e8-6a9c-4ca6-b9cf-e3cf405d0d31\",\"46604105-6fe3-4d7a-bc0b-44c0412dcf45\"],\"incompleteColumns\":{}}}}}}},\"hidePanelTitles\":false,\"enhancements\":{}},\"title\":\"Unique Connections Outbound from Node\"}]",
+        "optionsJSON": "{\"useMargins\":true,\"syncColors\":false,\"hidePanelTitles\":false}",
+        "version": 1,
+        "timeRestore": false,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
+        }
+      },
+      "references": [
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "acb7e289-faca-448f-953d-957b5e3e7619:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "acb7e289-faca-448f-953d-957b5e3e7619:indexpattern-datasource-layer-1e28641e-7e3e-420d-99db-a5518960e1b4"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "5f860dbb-d8f4-4ac1-98e7-3ccc66a44eb6:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "5f860dbb-d8f4-4ac1-98e7-3ccc66a44eb6:indexpattern-datasource-layer-001d3714-d152-479b-bf76-ebd9b57df9a7"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "5181ea25-be23-477c-81a1-8742b0c5a003:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "5181ea25-be23-477c-81a1-8742b0c5a003:indexpattern-datasource-layer-29e15065-6afc-4237-82c8-65f7b4484013"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "0d665d6e-f4ff-4bc9-8a1f-ec4cfdced301:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "0d665d6e-f4ff-4bc9-8a1f-ec4cfdced301:indexpattern-datasource-layer-29e15065-6afc-4237-82c8-65f7b4484013"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "410f61b8-240a-4eaf-a00b-5a4331af53ff:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "410f61b8-240a-4eaf-a00b-5a4331af53ff:indexpattern-datasource-layer-616e0ca0-6b80-4c97-9eca-e5fa3d90579e"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "656a8ecd-38bc-4564-b39c-ab5ec3d315a4:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "656a8ecd-38bc-4564-b39c-ab5ec3d315a4:indexpattern-datasource-layer-be80a016-4aa5-44f6-9f83-c178e46255b3"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "03956036-fd7c-4cd4-aa59-909631468b25:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "03956036-fd7c-4cd4-aa59-909631468b25:indexpattern-datasource-layer-2cdca509-0e7e-44d0-a991-689795437baa"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "480b4f91-23c7-4f6e-8699-66404eb8803d:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "480b4f91-23c7-4f6e-8699-66404eb8803d:indexpattern-datasource-layer-fde90e11-b346-496f-812f-32e463c92761"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "3c54e4c3-2ed5-485a-bd9d-22d9d25c8682:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "3c54e4c3-2ed5-485a-bd9d-22d9d25c8682:indexpattern-datasource-layer-2cdca509-0e7e-44d0-a991-689795437baa"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "375ae4ea-4a9f-4974-bc1b-f42053eb9397:indexpattern-datasource-current-indexpattern"
+        },
+        {
+          "type": "index-pattern",
+          "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+          "name": "375ae4ea-4a9f-4974-bc1b-f42053eb9397:indexpattern-datasource-layer-fde90e11-b346-496f-812f-32e463c92761"
+        }
+      ],
+      "migrationVersion": {
+        "dashboard": "7.16.0"
+      },
+      "coreMigrationVersion": "7.16.2"
+    },
+    {
+      "id": "23d30fa0-660f-11ec-8f1b-ff4528ad4930",
+      "type": "index-pattern",
+      "namespaces": [
+        "default"
+      ],
+      "updated_at": "2021-12-27T19:55:52.831Z",
+      "version": "WzU5ODUsMTBd",
+      "attributes": {
+        "fieldAttrs": "{}",
+        "title": "algorand*",
+        "timeFieldName": "@timestamp",
+        "fields": "[]",
+        "typeMeta": "{}",
+        "runtimeFieldMap": "{}"
+      },
+      "references": [],
+      "migrationVersion": {
+        "index-pattern": "7.11.0"
+      },
+      "coreMigrationVersion": "7.16.2"
+    }
+  ]
+}
