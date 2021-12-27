@@ -17,4 +17,4 @@
 	- Search `index pattern` in the Elastic search bar at the top center of the page.
 	- Name the index pattern as `algorand*`.
 	- Use the UUID of `23d30fa0-660f-11ec-8f1b-ff4528ad4930` under advanced settings.
-	- ![Index pattern creation](./images/index-pattern)
+	- ![Index pattern creation](./images/index-pattern.png)
