@@ -2,17 +2,17 @@ filebeat.inputs:
 - type: filestream
   enabled: true
   paths:
-    - /var/lib/algorand/node.log
+    - /var/lib/algorand/node.log # Path for Algorand node logs
     
 filebeat.config.modules:
   path: ${path.config}/modules.d/*.yml
   reload.enabled: false
 
 setup.kibana:
-  host: "170.187.147.133:5601"
+  host: "<ip or domain>:5601" # IP address or URL for Kibana host
   
 output.logstash:
-  hosts: ["170.187.147.133:5044"]
+  hosts: ["<ip or domain>:5044"] # IP Address or URL for Logstash host
   bulk_max_size: 1024
 
 processors:
