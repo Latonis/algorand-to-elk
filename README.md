@@ -22,6 +22,6 @@
 2. Once the Elastic page has loaded, create an index pattern.
 	- Search `index pattern` in the Elastic search bar at the top center of the page.
 	- Name the index pattern as `algorand*`.
-	- Use the ustom index pattern ID of `23d30fa0-660f-11ec-8f1b-ff4528ad4930` under advanced settings.
+	- Use the custom index pattern ID of `23d30fa0-660f-11ec-8f1b-ff4528ad4930` under advanced settings.
 	- ![Index pattern creation](./images/index-pattern.png)
 3. Import the dashboard (`dashboard-to-import.json`).
