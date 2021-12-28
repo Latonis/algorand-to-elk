@@ -24,6 +24,6 @@
 	- Name the index pattern as `algorand*`.
 	- Use the custom index pattern ID of `23d30fa0-660f-11ec-8f1b-ff4528ad4930` under advanced settings.
 	- ![Index pattern creation](./images/index-pattern.png)
-3. Import the dashboard (`dashboard-to-import.json`).
+3. Import the dashboard (`dashboard-to-import.ndjson`).
 	- Use curl to do so via Kibana's API
 		- `curl -X POST localhost:5601/api/saved_objects/_import -H "kbn-xsrf: true" --form file=@dashboard-to-import.ndjson`
