@@ -26,4 +26,4 @@
 	- ![Index pattern creation](./images/index-pattern.png)
 3. Import the dashboard (`dashboard-to-import.json`).
 	- Use curl to do so via Kibana's API
-		- `curl -X POST "localhost:5601/api/saved_objects/_import -H "kbn-xsrf: true" --form file=@dashboard-to-import.json" -H 'kbn-xsrf: true'`
+		- `curl -X POST localhost:5601/api/saved_objects/_import -H "kbn-xsrf: true" --form file=@dashboard-to-import.ndjson`
